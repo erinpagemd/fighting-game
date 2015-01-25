@@ -1,0 +1,30 @@
+{
+  "name": "fighting-game",
+  "version": "1.0.0",
+  "description": "frustration in class",
+  "main": "app.js",
+  "dependencies": {
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "chai": "^1.10.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "npm run lint-json && npm run lint-js && npm run lint-js-style",
+    "lint-json": "jsonlint -q package.json .jscsrc .jshintrc",
+    "lint-js": "jshint .",
+    "lint-js-style": "jscs ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erinpagemd/fighting-game.git"
+  },
+  "author": "Erin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erinpagemd/fighting-game/issues"
+  },
+  "homepage": "https://github.com/erinpagemd/fighting-game"
+}
