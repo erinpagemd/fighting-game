@@ -2,26 +2,26 @@
 1 verbose cli [ '/usr/local/node/bin/node',
 1 verbose cli   '/usr/local/node/bin/npm',
 1 verbose cli   'run',
-1 verbose cli   'test' ]
+1 verbose cli   'lint' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.35
-4 verbose run-script [ 'pretest', 'test', 'posttest' ]
-5 info pretest fighting-game@1.0.0
-6 info test fighting-game@1.0.0
+4 verbose run-script [ 'prelint', 'lint', 'postlint' ]
+5 info prelint fighting-game@1.0.0
+6 info lint fighting-game@1.0.0
 7 verbose unsafe-perm in lifecycle true
-8 info fighting-game@1.0.0 Failed to exec test script
-9 error fighting-game@1.0.0 test: `./node_modules/mocha/bin/mocha`
+8 info fighting-game@1.0.0 Failed to exec lint script
+9 error fighting-game@1.0.0 lint: `npm run lint-json && npm run lint-js && npm run lint-js-style`
 9 error Exit status 1
-10 error Failed at the fighting-game@1.0.0 test script.
+10 error Failed at the fighting-game@1.0.0 lint script.
 10 error This is most likely a problem with the fighting-game package,
 10 error not with npm itself.
 10 error Tell the author that this fails on your system:
-10 error     ./node_modules/mocha/bin/mocha
+10 error     npm run lint-json && npm run lint-js && npm run lint-js-style
 10 error You can get their info via:
 10 error     npm owner ls fighting-game
 10 error There is likely additional logging output above.
 11 error System Darwin 14.0.0
-12 error command "/usr/local/node/bin/node" "/usr/local/node/bin/npm" "run" "test"
+12 error command "/usr/local/node/bin/node" "/usr/local/node/bin/npm" "run" "lint"
 13 error cwd /Users/erinpage/Desktop/codeness/fighting-game
 14 error node -v v0.10.35
 15 error npm -v 1.4.28
